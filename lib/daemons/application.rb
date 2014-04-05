@@ -317,7 +317,7 @@ module Daemons
 #
 #     end
 
-	   def reload
+    def reload
       if @pid.pid == 0
         zap
         start
@@ -328,7 +328,7 @@ module Daemons
           # ignore
         end
       end
-     end
+    end
 
     # This is a nice little function for debugging purposes:
     # In case a multi-threaded ruby script exits due to an uncaught exception
