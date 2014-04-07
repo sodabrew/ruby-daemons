@@ -1,5 +1,11 @@
 = Daemons Release History
 
+== Release 1.2.0: unreleased
+
+* Migrate home repo to GitHub.
+* Run source through Rubocop for style and consistency.
+* Pidfile.pid returns nil instead of 0 (actual pid 0 is 'init', and invalid contents would evaluate to 0).
+
 == Release 1.1.10: June 26, 2013
 
 * fix Pid.running? rescuing timeout exceptions (thanks to Geraud Boyer)
